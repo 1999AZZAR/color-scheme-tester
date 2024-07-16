@@ -12,7 +12,7 @@
     --denary-color: #acc5c5;
 }
 
-.text-container {
+.text-container, .list-container, .article-container, .blockquote-container {
     background: var(--tertiary-color);
     padding: 20px;
     border-radius: 8px;
@@ -22,12 +22,67 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.text-container:hover {
+.text-container:hover, .list-container:hover, .article-container:hover, .blockquote-container:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.text-container h2 i {
+.list-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list-container li {
+    background: var(--quaternary-color);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.list-container li i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.article-container article {
+    background: var(--quaternary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.article-container h3 i {
+    margin-right: 8px;
+}
+
+.article-container h3, .article-container p i {
+    color: var(--primary-color);
+}
+
+.article-container p i {
+    margin-right: 8px;
+}
+
+.article-container p, .article-container p i {
+    color: var(--secondary-color);
+}
+
+.blockquote-container blockquote {
+    background: var(--quaternary-color);
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 8px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.blockquote-container blockquote p i {
+    color: var(--primary-color);
+    margin: 0 5px;
+}
     margin-right: 8px;
 }
 

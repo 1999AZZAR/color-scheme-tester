@@ -9,7 +9,23 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
     styleSheet.id = 'dynamicColorScheme';
     styleSheet.textContent = colorScheme;
     document.head.appendChild(styleSheet);
-});
+    const listContainer = document.getElementById('listContainer');
+    listContainer.querySelectorAll('li').forEach(li => {
+        li.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--quaternary-color').trim();
+        li.querySelector('i').style.color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+    });
+
+    const articleContainer = document.getElementById('articleContainer');
+    articleContainer.querySelector('article').style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--quaternary-color').trim();
+    articleContainer.querySelector('h3').style.color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+    articleContainer.querySelector('p').style.color = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color').trim();
+
+    const blockquoteContainer = document.getElementById('blockquoteContainer');
+    blockquoteContainer.querySelector('blockquote').style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--quaternary-color').trim();
+    blockquoteContainer.querySelector('blockquote').style.borderLeftColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+    blockquoteContainer.querySelectorAll('i').forEach(icon => {
+        icon.style.color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+    });
 
 document.getElementById('applySchemeButton').addEventListener('click', function() {
     const textContainer = document.getElementById('textContainer');
