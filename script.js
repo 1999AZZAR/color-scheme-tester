@@ -12,6 +12,13 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
 });
 
 document.getElementById('applySchemeButton').addEventListener('click', function() {
+    const textContainer = document.getElementById('textContainer');
+    textContainer.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--tertiary-color').trim();
+    textContainer.querySelector('h2').style.color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+    textContainer.querySelector('p').style.color = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color').trim();
+});
+
+document.getElementById('applySchemeButton').addEventListener('click', function() {
     const colorBoxesContainer = document.getElementById('colorBoxesContainer');
     colorBoxesContainer.innerHTML = ''; // Clear previous boxes
 
