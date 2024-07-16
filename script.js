@@ -9,5 +9,7 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
     styleSheet.id = 'dynamicColorScheme';
     styleSheet.textContent = colorScheme;
     document.head.appendChild(styleSheet);
+    const colorDisplayBox = document.getElementById('colorDisplayBox');
+    colorDisplayBox.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
 });
 

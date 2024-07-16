@@ -10,6 +10,29 @@ body {
     margin: 0;
 }
 
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% { background-color: var(--primary-color); }
+    10% { background-color: var(--secondary-color); }
+    20% { background-color: var(--tertiary-color); }
+    30% { background-color: var(--quaternary-color); }
+    40% { background-color: var(--quinary-color); }
+    50% { background-color: var(--senary-color); }
+    60% { background-color: var(--septenary-color); }
+    70% { background-color: var(--octonary-color); }
+    80% { background-color: var(--nonary-color); }
+    90% { background-color: var(--denary-color); }
+    100% { background-color: var(--primary-color); }
+}
+
 .container {
     background: var(--tertiary-color);
     padding: 20px;
