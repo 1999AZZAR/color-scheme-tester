@@ -12,6 +12,57 @@
     --denary-color: #acc5c5;
 }
 
+.form-container {
+    background: var(--tertiary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--quaternary-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container button {
+    background-color: var(--quinary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container button i {
+    margin-right: 8px;
+}
+
+.form-container button:hover {
+    background-color: var(--senary-color);
+}
+
 .nested-container {
     background: var(--senary-color);
     padding: 15px;
@@ -53,7 +104,7 @@
     margin-right: 8px;
 }
 
-.text-container, .list-container, .article-container, .blockquote-container {
+.text-container, .list-container, .article-container, .blockquote-container, .form-container {
     background: var(--tertiary-color);
     padding: 20px;
     border-radius: 8px;

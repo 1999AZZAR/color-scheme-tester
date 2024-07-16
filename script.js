@@ -55,4 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const defaultColorScheme = colorSchemeInput.value;
         applyColorScheme(defaultColorScheme);
     });
+    const sampleForm = document.getElementById('sampleForm');
+    sampleForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Form submitted!');
+    });
 });
