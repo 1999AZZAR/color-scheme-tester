@@ -60,4 +60,5 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         alert('Form submitted!');
     });
+    // Additional JavaScript for loading animations can be added here if needed
 });
