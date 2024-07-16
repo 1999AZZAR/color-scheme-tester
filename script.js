@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         updateColorBoxes(colors);
     }
 
+    // Apply the default color scheme on page load
+    const defaultColorScheme = colorSchemeInput.value;
+    applyColorScheme(defaultColorScheme);
+
     function extractColors(colorScheme) {
         const colorRegex = /--\w+-color:\s*(#[0-9a-fA-F]{6});/g;
         let match;

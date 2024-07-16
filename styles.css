@@ -12,6 +12,29 @@
     --denary-color: #acc5c5;
 }
 
+.new-container {
+    background: var(--quaternary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.new-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.new-container h3, .new-container p {
+    color: var(--primary-color);
+}
+
+.new-container p i {
+    margin-right: 8px;
+}
+
 .text-container, .list-container, .article-container, .blockquote-container {
     background: var(--tertiary-color);
     padding: 20px;
@@ -79,7 +102,7 @@
     font-style: italic;
 }
 
-.blockquote-container blockquote p i {
+.blockquote-container blockquote p i, .new-container h3 i, .new-container p i {
     color: var(--primary-color);
     margin: 0 5px;
 }
