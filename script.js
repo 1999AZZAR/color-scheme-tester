@@ -30,7 +30,7 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
             colorBox.style.backgroundColor = colorValue;
             const icon = document.createElement('i');
             icon.className = 'fas fa-palette';
-            icon.style.color = colorValue;
+            icon.style.color = '#FFFFFF'; // Set icon color to white
             colorBox.appendChild(icon);
             colorBoxesContainer.appendChild(colorBox);
         }
