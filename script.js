@@ -11,3 +11,25 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
     document.head.appendChild(styleSheet);
 });
 
+document.getElementById('applySchemeButton').addEventListener('click', function() {
+    const colorBoxesContainer = document.getElementById('colorBoxesContainer');
+    colorBoxesContainer.innerHTML = ''; // Clear previous boxes
+
+    const rootStyles = getComputedStyle(document.documentElement);
+    const colorVariables = [
+        '--primary-color', '--secondary-color', '--tertiary-color', '--quaternary-color',
+        '--quinary-color', '--senary-color', '--septenary-color', '--octonary-color',
+        '--nonary-color', '--denary-color'
+    ];
+
+    colorVariables.forEach(colorVar => {
+        const colorValue = rootStyles.getPropertyValue(colorVar).trim();
+        if (colorValue) {
+            const colorBox = document.createElement('div');
+            colorBox.className = 'color-box';
+            colorBox.style.backgroundColor = colorValue;
+            colorBoxesContainer.appendChild(colorBox);
+        }
+    });
+});
+
