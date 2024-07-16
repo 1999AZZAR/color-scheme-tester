@@ -28,6 +28,10 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
             const colorBox = document.createElement('div');
             colorBox.className = 'color-box';
             colorBox.style.backgroundColor = colorValue;
+            const icon = document.createElement('i');
+            icon.className = 'fas fa-palette';
+            icon.style.color = colorValue;
+            colorBox.appendChild(icon);
             colorBoxesContainer.appendChild(colorBox);
         }
     });
