@@ -97,10 +97,16 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+h1 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 
