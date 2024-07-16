@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const colors = extractColors(colorScheme);
         updateColorBoxes(colors);
+        updateLoadingAnimations(colors);
+    }
+
+    function updateLoadingAnimations(colors) {
+        const spinners = document.querySelectorAll('.spinner');
+        spinners.forEach((spinner, index) => {
+            spinner.style.borderTopColor = colors[index % colors.length];
+        });
     }
 
 
