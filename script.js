@@ -32,6 +32,11 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
             icon.className = 'fas fa-palette';
             icon.style.color = '#FFFFFF'; // Set icon color to white
             colorBox.appendChild(icon);
+            const colorName = document.createElement('span');
+            colorName.className = 'color-name';
+            colorName.textContent = colorVar.replace('--', '').replace('-', ' ');
+            colorBox.appendChild(icon);
+            colorBox.appendChild(colorName);
             colorBoxesContainer.appendChild(colorBox);
         }
     });

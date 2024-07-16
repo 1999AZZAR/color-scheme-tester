@@ -79,3 +79,25 @@ textarea {
 .color-box i {
     font-size: 24px;
 }
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.color-box i {
+    font-size: 24px;
+}
+
+.color-name {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #FFFFFF; /* Set text color to white for contrast */
+}
