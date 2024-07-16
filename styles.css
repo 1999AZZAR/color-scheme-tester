@@ -25,13 +25,6 @@ body {
     border-radius: 8px;
 }
 
-.color-box {
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
-    border: 2px solid var(--secondary-color);
-    border-radius: 8px;
-}
 
 .container {
     background: var(--tertiary-color);
