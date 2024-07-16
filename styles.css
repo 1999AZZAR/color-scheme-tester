@@ -176,6 +176,7 @@
 }
 
 .text-container, .list-container, .article-container, .blockquote-container, .form-container, .loading-container {
+    display: flex;
     background: var(--tertiary-color);
     padding: 20px;
     border-radius: 8px;
@@ -183,6 +184,8 @@
     text-align: center;
     margin-top: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
+    flex-direction: column;
+    align-content: center;
 }
 
 .text-container:hover, .list-container:hover, .article-container:hover, .blockquote-container:hover {
@@ -284,7 +287,8 @@ h1 {
 }
 
 textarea {
-    width: 100%;
+    width: -webkit-fill-available;
+    max-width: 85vw;
     padding: 10px;
     border: 1px solid var(--quaternary-color);
     border-radius: 4px;
