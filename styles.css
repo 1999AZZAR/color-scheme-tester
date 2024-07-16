@@ -83,12 +83,6 @@
     color: var(--primary-color);
     margin: 0 5px;
 }
-    margin-right: 8px;
-}
-
-.text-container h2, .text-container p i {
-    color: var(--primary-color);
-}
 
 .text-container p i {
     margin-right: 8px;
