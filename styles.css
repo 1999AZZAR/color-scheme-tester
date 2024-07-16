@@ -27,11 +27,19 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.text-container h2 {
+.text-container h2 i {
+    margin-right: 8px;
+}
+
+.text-container h2, .text-container p i {
     color: var(--primary-color);
 }
 
-.text-container p {
+.text-container p i {
+    margin-right: 8px;
+}
+
+.text-container p, .text-container p i {
     color: var(--secondary-color);
 }
 
