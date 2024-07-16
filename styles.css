@@ -50,3 +50,17 @@ textarea {
     background-color: var(--senary-color);
 }
 
+.color-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+}
