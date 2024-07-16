@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const icon = document.createElement('i');
             icon.className = 'fas fa-tint';
-            icon.style.color = color;
+            icon.style.color = '#FFFFFF'; // Set icon color to white for contrast
 
             const colorName = document.createElement('div');
             colorName.className = 'color-name';
