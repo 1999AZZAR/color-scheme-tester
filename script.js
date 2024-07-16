@@ -34,7 +34,7 @@ document.getElementById('applySchemeButton').addEventListener('click', function(
             colorBox.appendChild(icon);
             const colorName = document.createElement('span');
             colorName.className = 'color-name';
-            colorName.textContent = colorVar.replace('--', '').replace('-', ' ');
+            colorName.textContent = `${colorVar.replace('--', '').replace('-', ' ')}: ${colorValue}`;
             colorBox.appendChild(icon);
             colorBox.appendChild(colorName);
             colorBoxesContainer.appendChild(colorBox);
