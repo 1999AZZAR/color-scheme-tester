@@ -57,6 +57,29 @@
     100% { transform: rotate(360deg); }
 }
 
+@keyframes spin-reverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.spinner-1 {
+    animation: spin 1s linear infinite;
+}
+
+.spinner-2 {
+    animation: spin-reverse 1s linear infinite;
+}
+
+.spinner-3 {
+    animation: pulse 1s ease-in-out infinite;
+}
+
 .form-container {
     background: var(--tertiary-color);
     padding: 20px;
