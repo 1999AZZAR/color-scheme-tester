@@ -371,18 +371,27 @@ textarea {
 }
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #f1f1f1;
+    padding: 20px;
+    background-color: var(--tertiary-color);
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 footer a {
     text-decoration: none;
-    color: #000;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: var(--secondary-color);
 }
