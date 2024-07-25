@@ -28,10 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function extractColors(colorScheme) {
-        const colorRegex = /--\w+-color:\s*(#[0-9a-fA-F]{6}(?![0-9a-fA-F]{2}));/g;
+        const colorRegex = /--\w+-color:\s*(#[0-9a-fA-F]{6,8});/g;
         let match;
         const colors = [];
         while ((match = colorRegex.exec(colorScheme)) !== null) {
+            // Filter out colors with transparency values (8-digit hex codes)
+            if (match[1].length === 9) continue;
             colors.push(match[1]);
         }
         return colors;
