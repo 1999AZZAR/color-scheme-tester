@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function extractColors(colorScheme) {
-        const colorRegex = /--\w+-color:\s*(#[0-9a-fA-F]{6});/g;
+        const colorRegex = /--\w+-color:\s*(#[0-9a-fA-F]{6}(?![0-9a-fA-F]{2}));/g;
         let match;
         const colors = [];
         while ((match = colorRegex.exec(colorScheme)) !== null) {
